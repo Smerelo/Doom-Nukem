@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asamir-k <asamir-k@student.42.fr>          +#+  +:+       +#+        */
+/*   By: smerelo <smerelo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 22:35:38 by dhorvill          #+#    #+#             */
-/*   Updated: 2019/05/08 11:35:59 by dhorvill         ###   ########.fr       */
+/*   Updated: 2019/05/16 20:52:14 by smerelo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int		main(int argc, char **argv)
 	b.player = load_player(b.sectors, b.map);
 	data.startgame_timer = time(0);
 	data.numsectors = b.numsectors;
-	Mix_PlayMusic(data.menutheme, 1);
+	//Mix_PlayMusic(data.menutheme, 1);
 	game_loop(&data, &b);
 	ft_exit();
 	return (0);
